@@ -2,7 +2,12 @@ import React from 'react';
 
 const GithubButton = (props) => {
   const {user, repo, type, width, height, count, large} = props;
-  let src = `https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=${type}`;
+  let src = `https://ghbtns.com/github-btn.html?user=${user}`;
+  if (repo) {
+    src += `&repo=${repo}&type=${type}`;
+  } else {
+    src += `&type=${type}`;
+  }
   if (count) src += '&count=true';
   if (large) src += '&size=large';
 
@@ -20,7 +25,7 @@ const GithubButton = (props) => {
 
 GithubButton.propTypes = {
   user: React.PropTypes.string.isRequired,
-  repo: React.PropTypes.string.isRequired,
+  repo: React.PropTypes.string,
   type: React.PropTypes.oneOf(['star', 'watch', 'fork', 'follow']).isRequired,
   width: React.PropTypes.number.isRequired,
   height: React.PropTypes.number.isRequired,

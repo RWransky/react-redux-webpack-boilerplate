@@ -15,17 +15,17 @@ module.exports = Object.assign({
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
   app: {
-    title: 'Project Shili',
+    title: 'Observe, Preserve, Conserve. Repeat.',
     description: 'Only the things that are hard are worth doing.',
     head: {
-      titleTemplate: 'Project Shili: %s',
+      titleTemplate: 'Observe, Preserve, Conserve. Repeat: %s',
       meta: [
         {name: 'description', content: 'Only the things that are hard are worth doing.'},
         {charset: 'utf-8'},
-        {property: 'og:site_name', content: 'Project Shili'},
+        {property: 'og:site_name', content: 'Observe, Preserve, Conserve. Repeat.'},
         //{property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
         {property: 'og:locale', content: 'en_US'},
-        {property: 'og:title', content: 'Project Shili'},
+        {property: 'og:title', content: 'Observe, Preserve, Conserve. Repeat.'},
         {property: 'og:description', content: 'Only the things that are hard are worth doing.'},
         {property: 'og:card', content: 'summary'},
         {property: 'og:site', content: '@MWransky'},
