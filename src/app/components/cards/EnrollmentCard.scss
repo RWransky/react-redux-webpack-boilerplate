@@ -1,0 +1,65 @@
+@import '../../assets/_global.scss';
+
+.enrollment-card {
+  margin-bottom:20px;
+
+  .enrollment {
+    padding: 25px;
+    padding-left: 40px;
+  }
+}
+
+
+.enrollment {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $borderColor;
+
+  .enrollment-info {
+    display: inline-block;
+
+    h4 {
+      font-weight: $textSemibold;
+      color: $textRichDarkColor;
+    }
+  }
+
+  .white {
+    color: white;
+    float: right;
+    display: inline-block;
+  }
+
+  .yellow {
+    display: inline-block;
+    background-color: #ffd633;
+    color: #ffd633;
+    border-radius: 15px;
+    float: right;
+  }
+
+  .red {
+    display: inline-block;
+    background-color: #DF0314;
+    color: #DF0314;
+    border-radius: 15px;
+    float: right;
+  }
+
+  .muted {
+    display: inline-block;
+    background-color: #99FF99;
+    color: #99FF99;
+    border-radius: 15px;
+    float: right;
+  }
+
+  .enrollment-actions {
+    display: inline-block;
+    float: right;
+  }
+}
+
+
+.enrollment:last-child {
+  border-bottom: 0px;
+}

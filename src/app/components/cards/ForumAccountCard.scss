@@ -1,0 +1,41 @@
+@import '../../assets/_global.scss';
+
+.btn-more {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.forum-card {
+  .account {
+    height: 200px;
+    padding: 40px 30px;
+  }
+
+  .avatar {
+    height: 120px;
+    width: 120px;
+    float: left;
+    margin-right: 25px;
+  }
+
+  .unknown.avatar {
+    background-size: 120px 120px;
+    background-image: url('../../assets/icons/slate_logo.png');
+  }
+
+  .info {
+    padding: 40px 10px 30px 40px;
+  }
+
+  .svg-container { 
+    display: inline-block;
+    margin-left: 25px;
+    position: relative;
+    width: 100%;
+    vertical-align: middle; 
+    overflow: hidden; 
+  }
+}

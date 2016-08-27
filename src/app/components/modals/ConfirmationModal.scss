@@ -1,0 +1,29 @@
+@import '../../assets/_global.scss';
+
+.modal-body {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    margin-bottom: 50px;
+  }
+}
+
+.modal-content {
+  width: 650px;
+
+  .icon-close {
+    margin: 19px;
+    float: right;
+    height: 15px;
+    width: 15px;
+
+    cursor: pointer;
+  }
+
+  .modal-content-container {
+    padding: 60px;
+  }
+}
+

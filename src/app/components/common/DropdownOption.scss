@@ -1,0 +1,15 @@
+@import '../../assets/_global.scss';
+
+.selector-dropdown {
+  .dropdown-option {
+    width: 220px;
+    padding: 10px 20px;
+    float: left !important;
+  }
+
+  .dropdown-option:hover {
+    cursor: pointer;
+    background-color: $highlightColor;
+    color: white;
+  }
+}

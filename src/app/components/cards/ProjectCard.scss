@@ -1,0 +1,60 @@
+@import '../../assets/_global.scss';
+
+.project-card {
+  margin-bottom: 20px;
+
+  .submission {
+    padding: 25px;
+    padding-left: 20px;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid $borderColor;
+    display: flex;
+    
+      .submit-info {
+        flex: 1;
+      }
+    
+      .grader-info {
+        flex: 1;
+      }
+  }
+}
+
+
+.bump {
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+
+.green {
+  background-color: #FFFFFF;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+
+.yellow {
+  background-color: #ffd633;
+  color: #ffd633;
+  border-radius: 10px;
+}
+
+
+.red {
+  background-color: #DF0314;
+  color: #DF0314;
+  border-radius: 10px;
+}
+
+.muted {
+  background-color: #99FF99;
+  color: #99FF99;
+  border-radius: 10px;
+}
+
+
+.submission:last-child {
+  border-bottom: 0px;
+}
