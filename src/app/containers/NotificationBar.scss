@@ -1,0 +1,26 @@
+@import '../assets/_global.scss';
+
+.notification-bar {
+  height: 44px;
+  width: 940px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+
+  opacity: 1;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+  font-size: $textSmallFontSize;
+  font-weight: 600;
+}
+
+.notification-bar.fail {
+  background-color: $failColor;
+  border: 1px solid #99dcd0;
+}
+
+.notification-bar.success {
+  background-color: $successColor;
+  border: 1px solid $successColor;
+}

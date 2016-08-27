@@ -1,0 +1,79 @@
+@import './assets/_global.scss';
+
+.root {
+  min-height: 100%;
+  width: 100%;
+
+  .content-container {
+    z-index: 0;
+    height: 100%;
+    width: 100%;;
+  }
+
+  .loading-container {
+    position: fixed;
+    background: $bgColor;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@keyframes :global(spin) { 100% { transform:rotate(360deg); } }
+
+.loading-indicator {
+  display: block;
+  width: 32px;
+  height: 32px;
+  animation: spin 0.7s linear infinite;
+}
+
+.loading-indicator-teal {
+  @extend .loading-indicator;
+  background: url('~icons/spinner_teal.svg') transparent no-repeat center center;
+}
+
+.loading-indicator-white {
+  @extend .loading-indicator;
+  background: url('~icons/spinner_white.svg') transparent no-repeat center center;
+}
+
+.page-loading {
+  z-index: 3;
+
+  &.gray {
+    background: $bgColor;
+  }
+
+  &:before {
+    @extend .loading-indicator-teal;
+    content: '';
+    position: relative;
+    top: 50vh;
+    left: 50%;
+  }
+}
+
+.card {
+  background-color: white;
+  border: 1px solid $borderColor;
+  margin-bottom: 25px;
+  position: relative;
+  box-shadow: $appBoxShadow;
+  width: auto;
+
+  .title-section {
+    width: 100%;
+    border-bottom: 1px solid $borderColor;
+
+    h3 {
+      margin-top: 10px;
+      margin-left: 40px;
+      text-transform: uppercase;
+      font-size: $textXSmallFontSize;
+      color: $textGrayColor;
+      letter-spacing: 1.25px;
+      font-weight: $textBold;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../assets/_global.scss';
+
+.nd-group {
+	text-align: center;
+	font-size: 25px;
+	font-weight: $textSemibold;
+  color: $textRichDarkColor;
+}
+
+.no-projects {
+  padding: 25px;
+  padding-left: 40px;
+
+  padding-bottom: 20px;
+  border-bottom: 1px solid $borderColor;
+  display: flex;
+}

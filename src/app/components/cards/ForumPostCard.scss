@@ -1,0 +1,14 @@
+@import '../../assets/_global.scss';
+
+.post-row {
+  box-shadow: $appBoxShadow;
+  td .loading-indicator-teal {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.post-row:hover {
+  cursor: pointer;
+  background-color: $bgColor;
+}

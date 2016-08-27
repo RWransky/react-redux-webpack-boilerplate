@@ -1,0 +1,60 @@
+@import '../../assets/_global.scss';
+
+.edit-student-attr-container {
+  width: 100%;
+
+  div input, .field .name .name-val {
+    height: 40px;
+    width: 340px;
+    box-shadow: none;
+    border: 1px solid #dbe2e8;
+    border-radius: 0;
+  }
+
+  .new-field  {
+    height: 170px;
+    padding: 40px 30px;
+
+    .btn {
+      margin-top: 20px;
+      float: right;
+    }
+  }
+
+  .field {
+    height: 100px;
+    padding: 30px 30px;
+    color: $textGrayColor;
+
+    .name {
+      line-height: 40px;
+      float: left;
+
+      .name-val {
+        width: 260px;
+        float: left;
+      }
+
+      .name-val {
+        padding-left: 20px;
+      }
+    }
+
+    .value {
+      float: left;
+
+      input {
+        width: 277px;
+        border-left: 0px;
+        float: left;
+      }
+
+      .btn {
+        float: left;
+        min-width: 40px;
+        line-height: 26px;
+        border-radius: 0px;
+      }
+    }
+  }
+}

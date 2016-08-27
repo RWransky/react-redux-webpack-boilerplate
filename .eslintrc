@@ -1,0 +1,85 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "jasmine": true,
+    "node": true,
+    "browser": true,
+    "builtin": true
+  },
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "rules": {
+    "indent": [1, 2, {"SwitchCase": 1}],
+    "block-scoped-var": 0,
+    "camelcase": 0,
+    "curly": [
+      2,
+      "all"
+    ],
+    "eqeqeq": [
+      2
+    ],
+    "global-strict": [
+      0,
+      "never"
+    ],
+    "comma-dangle": [1, "never"],
+    "no-extra-semi": 1,
+    "guard-for-in": 2,
+    "new-cap": 2,
+    "no-bitwise": 2,
+    "no-dupe-keys": 2,
+    "no-caller": 2,
+    "no-empty": 2,
+    "no-extend-native": 2,
+    "no-irregular-whitespace": 2,
+    "no-iterator": 0,
+    "no-new": 0,
+    "no-redeclare": 0,
+    "no-sequences": 2,
+    "no-undef": 1,
+    "no-unused-vars": 1,
+    "no-use-before-define": 1,
+    "no-with": 2,
+    "jsx-quotes": [1, "prefer-single"],
+    "quotes": [
+      1,
+      "single",
+      "avoid-escape"
+    ],
+    "semi": [1, "always"],
+    "valid-typeof": 0,
+    "wrap-iife": [
+      0,
+      "inside"
+    ],
+    "react/display-name": 1,
+    "react/jsx-uses-react": 1,
+    "react/jsx-no-undef": 1,
+    "react/jsx-uses-vars": 1,
+    "react/jsx-max-props-per-line": [1, {"maximum": 3}],
+    "react/jsx-no-duplicate-props": 1,
+    "react/jsx-wrap-multilines": 1,
+    "react/no-unknown-property": 2
+  },
+  "globals": {
+    "ENV": true,
+    "CONFIG": true,
+    "VERSION": true,
+    "require": true,
+    "process": true,
+    "_": true,
+    "$": true,
+    "React": true,
+    "cssModule": true,
+    "moment": true,
+    "__": true,
+    "expect": true,
+    "jlet": true,
+    "Promise": true
+  },
+  "plugins": [
+    "react"
+  ]
+}

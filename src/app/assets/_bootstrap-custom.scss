@@ -1,0 +1,180 @@
+@import 'global';
+
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, .h1 {
+    font-size: $textLargeFontSize;
+  }
+
+  h2, .h2 {
+    font-size: $textMedFontSize;
+    font-weight: 700;
+  }
+
+  h3, .h3 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  a {
+    color: $linkColor;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .btn {
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px 20px;
+    min-width: 130px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 12px;
+    &:active, &:focus, &:active:focus {
+      outline: none;
+    }
+    &[disabled] {
+      opacity: 0.6;
+    }
+  }
+
+  .btn-default {
+    color: $textDefaultColor !important;
+    border-color: $linkColor !important;
+    background-color: white !important;
+  }
+
+  .btn-primary {
+    background-color: $buttonPrimaryColor !important;
+    border-color: $buttonPrimaryColor !important;
+  }
+
+  hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  pre {
+    border: 0;
+    background-color: $bgColor;
+    padding: 25px;
+  }
+
+  .radio-inline + .radio-inline,
+  .checkbox-inline + .checkbox-inline {
+    margin-left: 30px;
+  }
+
+  .panel {
+    border-radius: 2px;
+    margin-bottom: 30px;
+    box-shadow: $appBoxShadow;
+    .panel-heading {
+      padding: 30px;
+      background: white;
+      color: $textRichDarkColor;
+      font-size: 16px;
+      font-weight: $textSemibold;
+    }
+  }
+
+  .panel-default {
+    .panel-footer {
+      @extend %clearfix !optional;
+      border-top: none;
+      background: white;
+      padding: 10px 30px;
+      line-height: 40px;
+      vertical-align: middle;
+    }
+  }
+
+  .navbar {
+    height: $navbarHeight;
+    line-height: $navbarHeight;
+
+    .navbar-left {
+      height: $navbarHeight;
+      color: $textRichDarkColor;
+    }
+
+    .navbar-right {
+      margin-right: 0;
+    }
+  }
+
+  .navbar-fixed-top {
+    z-index: 1;
+  }
+
+  .modal-content {
+    border-color: $shadowBorderColor;
+    box-shadow: $appBoxShadow;
+  }
+
+  /* Vertically center modal, biased a bit towards the top
+     http://stackoverflow.com/questions/18422223/bootstrap-3-modal-vertical-position-center */
+  .modal {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    .modal:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 70%;
+    }
+  }
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .popover {
+    font-family: $fontFamily;
+    border-color: $shadowBorderColor;
+    box-shadow: $appBoxShadow;
+  }
+
+  .tooltip {
+    font-family: $fontFamily;
+  }
+
+  .fade {
+    transition-duration: 0.12s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .table > thead > tr > th {
+    border-bottom-width: 1px;
+  }
+
+  .nav.nav-pills {
+    text-align: center;
+    margin-bottom: 20px;
+    li {
+      float: none;
+      display: inline-block;
+      a:hover {
+        background: none;
+      }
+      a {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 3px;
+        border-radius: 0;
+        color: $textDarkerColor;
+      }
+      &.active a {
+        background: none;
+        border-bottom: 2px solid $highlightColor;
+        color: $textDarkerColor;
+        font-weight: 600;
+      }
+    }
+  }

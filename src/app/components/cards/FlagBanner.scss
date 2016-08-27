@@ -1,0 +1,25 @@
+@import '../../assets/_global.scss';
+
+.banner-watch {
+	text-align: center;
+	background-color: #ffd633;
+	color: black;
+	font-size: 15px;
+	border-radius: 15px;
+}
+
+.banner-warning {
+	text-align: center;
+	background-color: #FF8080;
+	color: white;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+.banner-warning-muted {
+	text-align: center;
+	background-color: #99FF99;
+	color: black;
+	font-size: 15px;
+	border-radius: 10px;
+}

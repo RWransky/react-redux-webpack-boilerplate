@@ -1,0 +1,118 @@
+/* ui colors */
+$appDarkColor: #334759;
+$appLightColor: #587a94;
+$buttonPrimaryColor: #02b3e4;
+$linkColor: $buttonPrimaryColor;
+$buttonHoverPrimaryColor: #02b3e4;
+$calloutColor: #183f52;
+$panelHoverColor: #fcfcfc;
+$dividerColor: #efefef;
+$bgColor: #FAFAFA;
+$borderColor: #dbe2e8;
+$lightBorderColor: #f5f7f8;
+$shadowBorderColor: rgba(0, 0, 0, 0.1);
+$highlightColor: #02ccba;
+$failColor: #ff5e5e;
+$successColor: #15c26b;
+$bubbleColor: #f3a635;
+
+/* fonts */
+$fontFamily: 'Open Sans', 'Helvetica', sans-serif;
+$textRichDarkColor: #2e3d49;
+$textHighlightColor: #02b3e4;
+$textDefaultColor: #757c81;
+$textGrayColor: #7d97ad;
+$textDarkerColor: #4f4f4f;
+$textSemiDarkColor: #58646d;
+$textLighterColor: #6f6f6f;
+$textXLargeFontSize: 20px;
+$textLargeFontSize: 18px;
+$textMedFontSize: 16px;
+$textSmallFontSize: 14px;
+$textXSmallFontSize: 12px;
+$textSemibold: 600;
+$textBold: 700;
+
+/* layout */
+$navbarHeight: 68px;
+$panelWidth: 778px;
+$mainWidth: 960px;
+$contentWidth: 720px;
+
+/* shadows */
+$appBoxShadow: 0px 1px 2px 0px rgba(46, 60, 73, 0.05);
+$popoverShadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+
+* {
+  font-family: Open Sans,Helvetica,sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: $bgColor !important;
+}
+
+.semibold {
+  font-weight: $textSemibold;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.modal-container {
+  position: relative;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.modal-backdrop.in {
+  background-color: #2e3d49;
+  opacity: .8 !important;
+}
+
+.modal-content {
+  border-radius: 0px !important;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: $textXLargeFontSize;
+}
+
+p {
+  font-size: $textMedFontSize;
+}
+
+.btn-regular {
+  padding: 11px 30px !important;
+  font-size: $textXSmallFontSize !important;
+  font-weight: 600 !important;
+}
+
+button.btn-small {
+  height: 50px;
+  min-width: 60px;
+}
+
+a.email {
+  color: $textHighlightColor !important;
+}
+
+.clickable {
+  cursor: pointer;
+}

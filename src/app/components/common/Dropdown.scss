@@ -1,0 +1,37 @@
+@import '../../assets/_global.scss';
+
+.selector-dropdown {
+  .dropdown-toggle {
+    font-weight: 600;
+  }
+
+  .dropdown-toggle:hover {
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+    color: $textRichDarkColor;
+    margin-top: -40px;
+    box-shadow: $appBoxShadow;
+
+    li a {
+      padding: 0 !important;
+    }
+  }
+
+  .dropdown-toggle {
+    padding: 10px;
+    border: none;
+    background-color: white;
+
+    .caret {
+      margin-left: 5px;
+    }
+  }
+}
+
+.selector-dropdown:hover {
+  color: $buttonHoverPrimaryColor;
+}
