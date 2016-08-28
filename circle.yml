@@ -12,6 +12,6 @@ dependencies:
 
 test:
   override:
-    - npm run lint
+    - gulp lint
     - npm test
     - npm run test-node
