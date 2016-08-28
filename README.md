@@ -41,6 +41,7 @@ This is a fully out-of-the-box working react/redux webpack app! Ready and set wi
 2. `npm install`
 3. `export ENV=development`
 4. `gulp`
+5. Go to `localhost:3000` and admire your work!
 
 ## Development
 If `ENV` is `development`, you'll be able to use [redux devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en). You can use it in other environments if you edit `src/app/stores/store.js` (set the devtools store initialization block to always run).
