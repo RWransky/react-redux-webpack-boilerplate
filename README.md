@@ -1,24 +1,25 @@
 # React Redux Webpack Boilerplate
 This is a fully out-of-the-box working react/redux webpack app! Ready and set with es6 and support for continuous integration via Circle CI!
 
-## Features NPM Packages
-react
-react-redux
-react-router-redux
-sass-loader
-less-loader
-bluebird
-es6-promise
+## Features NPM Packages:
+* react
+* react-redux
+* react-router-redux
+* sass-loader
+* less-loader
+* bluebird
+* es6-promise
 
-## Globally accessible functions within `/src/app`
-`$`:         jquery,
-`_`:         lodash,
-`React`:     react,
-`Redux`:     redux,
-`Promise`:	 es6-promise,
-`fetch`: 	 whatwg-fetch
+## Globally accessible functions within `/src/app`:
+* `$`:         jquery,
+* `_`:         lodash,
+* `React`:     react,
+* `Redux`:     redux,
+* `Promise`:   es6-promise,
+* `fetch`:     whatwg-fetch
 
 ## Repo Structure
+```
 `gulp`:		All things gulp related needed to run `gulpfile.js`
 `public`:	You can replace fonts, icon, favicon, etc. here
 `src/app`:	Where all the magic happens :p
@@ -34,7 +35,7 @@ es6-promise
 	`app.scss`:		Fancy styles
 	`config.js`:	See Development Section
 	`routes.jsx`:	Specify new routes in here
-
+```
 ## Running
 1. Clone the repository.
 2. `npm install`
