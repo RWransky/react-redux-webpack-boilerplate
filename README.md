@@ -36,12 +36,19 @@ This is a fully out-of-the-box working react/redux webpack app! Ready and set wi
 	`config.js`:	See Development Section
 	`routes.jsx`:	Specify new routes in here
 ```
-## Running
+## Running (Non-Docker)
 1. Clone the repository.
 2. `npm install`
 3. `export ENV=development`
 4. `gulp`
 5. Go to `localhost:3000` and admire your work!
+
+## Running (Docker)
+1. Make sure a `docker-machine` is running. You can check by `docker-machine status (machine_name)`
+2. `docker build . -t boiler`
+3. `docker run -d -it --name boiler -p 3000:3000 boiler`
+4. Find the IP address for your docker machine `docker-machine ip (machine_name)`
+5. Go to that IP at port 3000.
 
 ## Development
 If `ENV` is `development`, you'll be able to use [redux devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en). You can use it in other environments if you edit `src/app/stores/store.js` (set the devtools store initialization block to always run).

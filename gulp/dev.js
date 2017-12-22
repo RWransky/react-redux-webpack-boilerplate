@@ -33,6 +33,7 @@ module.exports = function(ENV) {
   gulp.task('dev.serve', function() {
     gulp.src([BUILD_DIR])
       .pipe(webserver({
+        host: '0.0.0.0',
         port: DEV_PORT,
         fallback: 'index.html'
       }));
